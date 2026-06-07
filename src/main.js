@@ -1,8 +1,8 @@
 import "./style.css";
 
 // Importación de imágenes
-import iconMenu from "./src/assets/img/icon-menu.svg";
-import iconClose from "./src/assets/img/icon-menu-close.svg";
+import iconMenu from "./assets/img/icon-menu.svg";
+import iconClose from "./assets/img/icon-menu-close.svg";
 
 // Selección del DOM
 const menuBtn = document.querySelector("#menu-btn");
