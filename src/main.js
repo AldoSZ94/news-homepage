@@ -1,6 +1,10 @@
 import "./style.css";
 
-// Selecciona elementos del DOM
+// Importación de imágenes
+import iconMenu from "./src/assets/img/icon-menu.svg";
+import iconClose from "./src/assets/img/icon-menu-close.svg";
+
+// Selección del DOM
 const menuBtn = document.querySelector("#menu-btn");
 const drawer = document.querySelector("#drawer");
 const overlay = document.querySelector("#overlay");
@@ -25,12 +29,10 @@ function renderMenu() {
   menuBtn.classList.toggle("z-20", !isOpen);
 
   // Icono del menú
-  menuIcon.src = isOpen ? "./src/assets/img/icon-menu-close.svg" : "./src/assets/img/icon-menu.svg";
+  menuIcon.src = isOpen ? iconClose : iconMenu;
 }
 
 menuBtn.addEventListener("click", () => {
-  // Cambia el estado (abre/cierra menú)
   isOpen = !isOpen;
-  // Actualiza la UI según el nuevo estado
   renderMenu();
 });
