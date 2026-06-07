@@ -26,7 +26,7 @@ Se puso especial énfasis en:
 
 ## 🚀 Demo
 
-👉 Agrega aquí tu link de GitHub Pages o Netlify
+👉 https://news-homepage-aldosz94.netlify.app/
 
 ---
 
