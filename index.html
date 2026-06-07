@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link type="image/svg+xml" href="/favicon.svg" rel="icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>news-homepage</title>
+  </head>
+  <body class="font-inter text-dark-grayish-blue text-[15px]">
+    <div class="mx-auto grid min-h-screen w-[90%] max-w-6xl items-center py-10">
+      <header class="flex items-center justify-between pb-5">
+        <a href="index.html"> <img src="./src/assets/img/logo.svg" alt="News logo" /></a>
+        <button
+          class="z-2 cursor-pointer md:hidden"
+          id="menu-btn"
+          type="button"
+          aria-controls="drawer"
+          aria-expanded="false"
+          aria-label="Open menu"
+        >
+          <img id="menu-icon" src="./src/assets/img/icon-menu.svg" alt="" />
+        </button>
+        <nav class="hidden md:block">
+          <ul class="flex gap-5">
+            <li>
+              <a class="hover:text-soft-orange transition" href="#">Home</a>
+            </li>
+            <li>
+              <a class="hover:text-soft-orange transition" href="#">New</a>
+            </li>
+            <li>
+              <a class="hover:text-soft-orange transition" href="#">Popular</a>
+            </li>
+            <li>
+              <a class="hover:text-soft-orange transition" href="#">Trending</a>
+            </li>
+            <li>
+              <a class="hover:text-soft-orange transition" href="#">Categories</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="grid gap-8 lg:grid-cols-3">
+        <!-- HERO SECTION -->
+        <section class="lg:col-span-2">
+          <article class="grid h-full gap-5 md:grid-cols-2 md:gap-8 lg:grid-rows-[1fr_auto]">
+            <picture class="md:col-span-2">
+              <source media="(min-width:1024px)" srcset="./src/assets/img/image-web-3-desktop.jpg" />
+              <img
+                class="h-full w-full object-cover"
+                src="./src/assets/img/image-web-3-mobile.jpg"
+                alt="Abstract illustration representing Web 3.0"
+              />
+            </picture>
+            <h1 class="text-very-dark-blue text-5xl leading-none font-bold">The Bright Future of Web 3.0?</h1>
+            <div class="flex flex-col">
+              <p>
+                We dive into the next evolution of the web that claims to put the power of the platforms back into the
+                hands of the people. But is it really fulfilling its promise?
+              </p>
+              <a
+                class="bg-soft-red hover:bg-very-dark-blue text-very-dark-blue mt-5 inline-block self-start px-5 py-3 font-bold tracking-widest uppercase transition hover:text-white"
+                href="#"
+                >read more</a
+              >
+            </div>
+          </article>
+        </section>
+        <!-- SIDEBAR WITH LATEST NEWS -->
+        <aside class="bg-very-dark-blue text-of-white flex flex-col gap-5 p-4 md:p-10">
+          <h2 class="text-soft-orange text-3xl font-bold">New</h2>
+          <article class="border-dark-grayish-blue flex flex-col gap-2 border-b pb-6 last:border-b-0">
+            <h3 class="text-xl font-bold text-white">
+              <a class="hover:text-soft-orange transition" href="#">Hydrogen VS Electric Cars</a>
+            </h3>
+            <p class="font-thin">Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </article>
+          <article class="border-dark-grayish-blue flex flex-col gap-2 border-b pb-6 last:border-b-0">
+            <h3 class="text-xl font-bold text-white">
+              <a class="hover:text-soft-orange transition" href="#">The Downsides of AI Artistry</a>
+            </h3>
+            <p class="font-thin">What are the possible adverse effects of on-demand AI image generation?</p>
+          </article>
+          <article class="flex flex-col gap-2">
+            <h3 class="text-xl font-bold text-white">
+              <a class="hover:text-soft-orange transition" href="#">Is VC Funding Drying Up</a>
+            </h3>
+            <p class="font-thin">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+          </article>
+        </aside>
+        <!-- TRENDING ARTICLES SECTION -->
+        <section class="grid gap-8 md:grid-cols-3 md:text-center lg:col-span-3 lg:text-left">
+          <article class="flex gap-4 md:flex-col lg:flex-row">
+            <picture class="basis-1/3">
+              <source type="image/avif" srcset="./src/assets/img/image-retro-pcs.avif" />
+              <source type="image/webp" srcset="./src/assets/img/image-retro-pcs.webp" />
+              <img
+                class="block h-full w-full object-cover"
+                src="./src/assets/img/image-retro-pcs.jpg"
+                alt="Old retro computers upgraded with modern hardware"
+              />
+            </picture>
+            <div class="flex basis-2/3 flex-col justify-between">
+              <span class="text-soft-red text-3xl font-extrabold" aria-hidden="true">01</span>
+              <h3 class="text-very-dark-blue text-lg font-bold">
+                <a class="hover:text-soft-red transition" href="#">Reviving Retro PC</a>
+              </h3>
+              <p>What happens when old PCs are given modern upgrades?</p>
+            </div>
+          </article>
+          <article class="flex gap-4 md:flex-col lg:flex-row">
+            <picture class="basis-1/3">
+              <source type="image/avif" srcset="./src/assets/img/image-top-laptops.avif" />
+              <source type="image/webp" srcset="./src/assets/img/image-top-laptops.webp" />
+              <img
+                class="block h-full w-full object-cover"
+                src="./src/assets/img/image-top-laptops.jpg"
+                alt="Laptop keyboard with red lighting representing top laptop picks"
+              />
+            </picture>
+            <div class="flex basis-2/3 flex-col justify-between">
+              <span class="text-soft-red text-3xl font-extrabold" aria-hidden="true">02</span>
+              <h3 class="text-very-dark-blue text-lg font-bold">
+                <a class="hover:text-soft-red transition" href="#">Top 10 Laptops of 2022</a>
+              </h3>
+              <p>Our best picks for various needs and budgets.</p>
+            </div>
+          </article>
+          <article class="flex gap-4 md:flex-col lg:flex-row">
+            <picture class="basis-1/3">
+              <source type="image/avif" srcset="./src/assets/img/image-gaming-growth.avif" />
+              <source type="image/webp" srcset="./src/assets/img/image-gaming-growth.webp" />
+              <img
+                class="block h-full w-full object-cover"
+                src="./src/assets/img/image-gaming-growth.jpg"
+                alt="Floating game controller representing the growth of gaming"
+              />
+            </picture>
+            <div class="flex basis-2/3 flex-col justify-between">
+              <span class="text-soft-red text-3xl font-extrabold" aria-hidden="true">03</span>
+              <h3 class="text-very-dark-blue text-lg font-bold">
+                <a class="hover:text-soft-red transition" href="#">The Growth of Gaming</a>
+              </h3>
+              <p>How the pandemic has sparked fresh opportunities.</p>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+    <!-- DRAWER -->
+    <div
+      class="fixed top-0 right-0 z-1 h-screen w-2/3 translate-x-full bg-white pt-50 pl-10 transition-transform duration-700 md:hidden"
+      id="drawer"
+    >
+      <nav>
+        <ul class="text-very-dark-blue flex flex-col gap-8 text-xl">
+          <li>
+            <a class="hover:text-soft-orange transition" href="#">Home</a>
+          </li>
+          <li>
+            <a class="hover:text-soft-orange transition" href="#">New</a>
+          </li>
+          <li>
+            <a class="hover:text-soft-orange transition" href="#">Popular</a>
+          </li>
+          <li>
+            <a class="hover:text-soft-orange transition" href="#">Trending</a>
+          </li>
+          <li>
+            <a class="hover:text-soft-orange transition" href="#">Categories</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- OVERLAY -->
+    <div
+      class="pointer-events-none fixed inset-0 bg-black opacity-0 transition-opacity duration-300"
+      id="overlay"
+    ></div>
+    <script src="/src/main.js" type="module"></script>
+  </body>
+</html>
